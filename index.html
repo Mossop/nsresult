@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>nsresult lookup</title>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+  <script type="application/javascript" src="js/results.js"></script>
+</head>
+<body>
+  <div id="input">
+    <p>Enter an nsresult value:</p>
+    <input id="value">
+    <button id="lookup", type="button">Lookup</button>
+  </div>
+  <div id="info">
+    <p>Enter an nsresult value above to look up its name.</p>
+    <p>Supported syntaxes:</p>
+    <ul>
+      <li>0xFEED</li>
+      <li>5177347</li>
+      <li>-5177347</li>
+    </ul>
+  </div>
+  <div id="results">
+    <p>Results for <span id="code"></span></p>
+    <p id="noresult">Not a recognised nsresult.</p>
+    <ul id="found">
+      <li id="name"></li>
+      <li id="message"></li>
+    </ul>
+  </div>
+</body>
+</html>
